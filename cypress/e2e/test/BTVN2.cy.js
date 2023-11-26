@@ -1,5 +1,5 @@
 describe("BTVN2", () => {
-    /*
+    
     it("TC1 - login false - password", () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         cy.get("input[name = 'username']").should("be.enabled").type("Admin");
@@ -34,7 +34,7 @@ describe("BTVN2", () => {
         cy.get("input[name = 'password']").should( "have.value", "admin123");
         cy.get(".oxd-text.oxd-text--span.oxd-input-field-error-message.oxd-input-group__message").should("be.visible").and("have.text", "Required");
     })
-    */
+    
     it("TC4 - login false - blank password", () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         cy.get("input[name = 'username']").should("be.enabled").type("Admin");
@@ -44,12 +44,12 @@ describe("BTVN2", () => {
         cy.get("input[name = 'password']").should( "have.value", "");
         cy.get(".oxd-text.oxd-text--span.oxd-input-field-error-message.oxd-input-group__message").should("be.visible").and("have.text", "Required");
     })
-    /*
+    
     it("TC5 - Login pass orange", () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         cy.xpath("//input[@placeholder='Username']").should("be.enabled").type("Admin")
         cy.xpath("//input[@placeholder='Password']").should("be.enabled").type("admin123")
         cy.xpath("//button[normalize-space()='Login']").should("be.enabled").click()
     })
-    */
+    
 })

@@ -10,10 +10,48 @@
 //
 //
 
-Cypress.on('uncaught:exception', (err, runnable) => {
+  Cypress.on('uncaught:exception', (err, runnable) => {
     return false
+  }) 
+
+  Cypress.Commands.add('inputText', function (elmUI, text) {
+    elmUI
+      .should("be.visible")
+      .clear()
+      .type(text)
+      .invoke("val")
+      .then(function (val) {
+        expect(val).to.eq(text);
+      });
+    
   })
 
+  Cypress.Commands.add('inputNumber', function (elmUI, number) {
+    elmUI
+      .should("be.visible")
+      .clear()
+      .type(number)
+  })
+
+  Cypress.Commands.add('radio_button', function (elmUI) {
+    elmUI
+    .should("be.enabled")
+    .check({force: true})
+  })
+
+  Cypress.Commands.add('checkbox', function (elmUI) {
+    elmUI
+    .should("be.enabled")
+    .and("not.be.checked")
+    .click({force: true})
+  })
+
+  Cypress.Commands.add("verifi", function(elmUI, text) {
+    elmUI
+    .should("be.enabled")
+    .and("have.value", text)
+       
+})
 
 // -- This is a parent command --
 // Cypress.Commands.add('login', (email, password) => { ... })

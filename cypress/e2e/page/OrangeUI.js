@@ -19,7 +19,6 @@ const LAST_NAME_EDIT = "//input[@placeholder='Last Name']";
 const ID_EMPLOY_EDIT = "//div[@class='orangehrm-edit-employee-content']//div[2]//div[1]//div[1]//div[1]//div[2]//input[1]";
 const SAVE_EDIT = "//div[@class='orangehrm-horizontal-padding orangehrm-vertical-padding']//button[@type='submit'][normalize-space()='Save']"
 
-
 export default class Orange {
     get getURL_LOGIN() {
         return URL_LOGIN

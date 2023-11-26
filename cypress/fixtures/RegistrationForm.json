@@ -1,0 +1,13 @@
+{
+    "Registration_Form": {
+        "first_Name" : "Long",
+        "last_Name" : "Long1",
+        "emai": "abc@gmail.com",
+        "age": 18,
+        "salary": 10000,
+        "department": "IT"
+    },
+    "Search": {
+        "first_Name" : "Long"
+    }
+}

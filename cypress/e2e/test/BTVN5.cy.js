@@ -18,8 +18,6 @@ describe("BTVN5", () => {
         cy.inputText(orangeUI.lastNameADD, Orange.data_add_emp.lastName_Add);
         cy.inputNumber(orangeUI.employeeIdADD, Orange.data_add_emp.idEmp_Add);
         orangeUI.saveADD.click({force: true});
-
-        
         //edit
         cy.url().should("contains", "viewPersonalDetails/empNumber")
         cy.inputText(orangeUI.firstNameEdit, Orange.data_edit_info_emp.firstName_Edit);

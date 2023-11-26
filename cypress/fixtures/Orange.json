@@ -1,0 +1,20 @@
+{
+    "data_login": {
+        "user_name" : "Admin",
+        "pass_word" : "admin123"
+    },
+
+    "data_add_emp": {
+        "firstName_Add" : "Nguyen",
+        "midName_Add" : "Duc",
+        "lastName_Add" : "Long",
+        "idEmp_Add" : 160401
+    },
+
+    "data_edit_info_emp": {
+        "firstName_Edit" : "Quynh",
+        "midName_Edit" : "Lien",
+        "lastName_Edit" : "Tho",
+        "idEmp_Edit" : 7777
+    }
+}
