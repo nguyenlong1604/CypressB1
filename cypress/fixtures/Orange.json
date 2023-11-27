@@ -8,13 +8,17 @@
         "firstName_Add" : "Nguyen",
         "midName_Add" : "Duc",
         "lastName_Add" : "Long",
-        "idEmp_Add" : 160401
+        "idEmp_Add" : 160407
     },
 
     "data_edit_info_emp": {
         "firstName_Edit" : "Quynh",
         "midName_Edit" : "Lien",
         "lastName_Edit" : "Tho",
-        "idEmp_Edit" : 7777
+        "idEmp_Edit" : "71604*"
+    },
+
+    "search_id": {
+        "idEmp_Edit" : "71604*"
     }
 }

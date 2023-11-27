@@ -19,6 +19,15 @@ const LAST_NAME_EDIT = "//input[@placeholder='Last Name']";
 const ID_EMPLOY_EDIT = "//div[@class='orangehrm-edit-employee-content']//div[2]//div[1]//div[1]//div[1]//div[2]//input[1]";
 const SAVE_EDIT = "//div[@class='orangehrm-horizontal-padding orangehrm-vertical-padding']//button[@type='submit'][normalize-space()='Save']"
 
+// list employelist
+const CLICK_PIM = "a[class='oxd-main-menu-item active']";
+const EMPLOY_LIST = "div[role='table']";
+
+//search
+const SEARCH_ID = "(//input[@class='oxd-input oxd-input--active'])[2]";
+const BTN_SEARCH = "button[type='submit']"
+
+
 export default class Orange {
     get getURL_LOGIN() {
         return URL_LOGIN
@@ -84,4 +93,30 @@ export default class Orange {
         return cy.xpath(SAVE_EDIT)
     }
 
+    //Click employe
+
+    get click_PIM () {
+        return (
+            cy.get(CLICK_PIM)
+            .should("be.visible")
+        )
+    }
+
+    get list_employ () {
+        return (
+            cy.get(EMPLOY_LIST)
+        )
+    }
+
+    //Search
+
+    get getsearch_ID () {
+        return cy.xpath(SEARCH_ID)
+    }
+
+    get getBtnSearchClick() {
+        return (
+            cy.get(BTN_SEARCH).should("be.enabled")
+        )
+    }
 }
