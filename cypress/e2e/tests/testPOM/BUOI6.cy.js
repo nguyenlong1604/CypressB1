@@ -1,6 +1,6 @@
-import TableUI from "../page/TablesUI";
-import RegistrationFormUI from "../page/RegistrationFormUI";
-import RegistrationForm from "../../fixtures/RegistrationForm.json";
+import TableUI from "../../page/TablesUI";
+import RegistrationFormUI from "../../page/RegistrationFormUI";
+import RegistrationForm from "../../../fixtures/RegistrationForm.json";
 
 const tablesUI = new TableUI;
 const registrationFormUI = new RegistrationFormUI

@@ -1,7 +1,7 @@
-import TableUI from "../page/TablesUI";
-import RegistrationFormUI from "../page/RegistrationFormUI";
-import RegistrationForm from "../../fixtures/RegistrationForm.json";
-import CheckboxUI from "../page/CheckboxUI"
+import TableUI from "../../page/TablesUI";
+import RegistrationFormUI from "../../page/RegistrationFormUI";
+import RegistrationForm from "../../../fixtures/RegistrationForm.json";
+import CheckboxUI from "../../page/CheckboxUI"
 
 const tablesUI = new TableUI
 const registrationFormUI = new RegistrationFormUI
@@ -9,7 +9,7 @@ const checkboxUI = new CheckboxUI
 
 
 describe("BTVN6", () => {
-    /*
+    
     it("BT1-Tuong tac table", () => {
         cy.visit(tablesUI.getURL)
         tablesUI.getAdd.click()
@@ -35,7 +35,8 @@ describe("BTVN6", () => {
         tablesUI.geticonSearch.click()
         cy.verifi(tablesUI.getSearch, RegistrationForm.Search.first_Name);
     })
-    */
+    
+   
     it("BT2 - Tuong tac voi danh sach", () => {
         cy.visit(checkboxUI.getURL);
         checkboxUI.getcheckList

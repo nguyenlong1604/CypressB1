@@ -1,5 +1,5 @@
-import PracticeFormUI from "../page/PracticeFormUI";
-import Formdemo from "../../fixtures/Formdemo.json";
+import PracticeFormUI from "../../page/PracticeFormUI";
+import Formdemo from "../../../fixtures/Formdemo.json";
 
 const practiceFormUI = new PracticeFormUI()
 
