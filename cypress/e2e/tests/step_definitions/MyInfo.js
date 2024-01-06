@@ -45,3 +45,7 @@ When("Lưu thông tin thành công", () => {
 Then("Kiểm tra thông tin vừa cập nhật", () => {
     cy.url().should("contain", "viewPersonalDetails");
 });
+
+Then("Kiểm tra thông tin vừa cập fsdfdggggggggggggggfgdgdfgdfdfgfdgdgbv gvfbfnhật", () => {
+    cy.url().should("contain", "viewPersonalDetails");
+});
