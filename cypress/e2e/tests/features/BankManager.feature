@@ -1,5 +1,5 @@
 Feature: Thêm khách hàng mới thành công khi nhấp chuột vào Bank Manager Login
-    
+    @smoke
     Scenario: Thêm khách hàng mới thành công
         Given Truy cập vào màn hình trang chủ
         When  Tôi nhấp chuột vào button "Bank Manager Login"

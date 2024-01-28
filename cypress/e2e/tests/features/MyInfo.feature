@@ -1,5 +1,5 @@
 Feature: Chỉnh sửa thông tin MyInfo
-
+  @smoke
   Scenario: Chỉnh sửa thông tin MyInfo thành công
     Given Tôi truy cập vào website và login thành công với username = "Admin" và password = "admin123"
     When Tôi truy cập vào MyInfo

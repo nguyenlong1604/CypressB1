@@ -49,3 +49,7 @@ Then("Kiểm tra thông tin vừa cập nhật", () => {
 Then("Kiểm tra thông tin vừa cập fsdfdggggggggggggggfgdgdfgdfdfgfdgdgbv gvfbfnhật", () => {
     cy.url().should("contain", "viewPersonalDetails");
 });
+
+  
+
+  
